@@ -1,0 +1,8 @@
+package entidade;
+
+public class Conversor {
+	public static double valorDolar;
+	public static double valorReais;
+	public static double imposto;
+
+}

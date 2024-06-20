@@ -1,0 +1,9 @@
+package entidade;
+
+public class Funcionarios {
+
+	public String nome;
+	public double salario;
+	public double porcentage;
+
+}

@@ -1,0 +1,15 @@
+package entidade;
+
+public class Conversor {
+
+	// declara~]ao de atributos e métodos com STATIC na subclasse permite , utilizar
+	// sem importar a classe na principal
+	public static double valor;
+	public static double quantidadeDolar;
+
+	private static double valorFinal(double valor) {
+		return valor * quantidadeDolar + 6.0 / 100.00;
+
+	}
+
+}

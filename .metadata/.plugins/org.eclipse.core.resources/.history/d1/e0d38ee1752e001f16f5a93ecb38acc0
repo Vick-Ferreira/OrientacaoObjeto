@@ -1,0 +1,32 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidade.Conversor;
+
+public class Dolar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Qual é o preço do dolar?");
+		Conversor.valorDolar = sc.nextDouble();
+		System.out.println("Quantos dolares você quer comprae?");
+		Conversor.quantidadeDolar = sc.nextDouble();
+		
+		System.out.println("");
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

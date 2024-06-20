@@ -1,0 +1,30 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidade.Funcionarios;
+
+public class Pagamentos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		// IMPORTAR OBJETO
+		Funcionarios funcionarios = new Funcionarios();
+
+		System.out.println("Digire por favor, seu nome, sálario bruto e imposto: ");
+		funcionarios.nome = sc.nextLine();
+		funcionarios.salarioBruto = sc.nextDouble();
+		funcionarios.imposto = sc.nextDouble();
+
+		System.out.println(funcionarios);
+
+		sc.close();
+
+	}
+
+}
