@@ -1,0 +1,24 @@
+package entidade;
+
+public class Produto {
+
+	//ATRIBUTOS
+	public String nome;
+	public double preco;
+	public int  quantidade;
+	
+	
+	//METODOS
+	public double totalValor() {
+		return preco * quantidade;
+	}
+	public void addProduto(int quantidade) {
+		//SOMAR QUANTIDADE
+		//this = AUTOREFERENCIA DO OBJ (ACESSAR ATRIBUTO)
+		this.quantidade += quantidade;// PEGAR O ATRIBUTO E SOMAR NELE O VALOR DO ARGUMENTO
+		
+	}
+	public void removerProduto (int quantidade) {
+		this.quantidade -= quantidade;
+	}
+}

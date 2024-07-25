@@ -1,0 +1,24 @@
+package entidade;
+
+public class Funcionarios {// sub class
+
+	// atributos
+	public String nome;
+	public double salarioBruto;
+	public double imposto;
+
+	// metodos
+	public double salarioLiquido() {
+
+	}
+
+	public void incrementoSalarioi(double porcentagem) {
+
+	}
+
+	public String toString() {
+		return "Nome: " + nome + "Sálario Bruto: R$ " + String.format("%.2f", salarioBruto) + "Imposto: R$ "
+				+ String.format(" %2.f", imposto);
+	}
+
+}

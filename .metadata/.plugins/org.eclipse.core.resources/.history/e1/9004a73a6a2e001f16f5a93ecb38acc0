@@ -1,0 +1,28 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidade.Alunos;
+
+public class NotaTrimestre {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		Alunos alunos = new Alunos();
+		alunos.nome = sc.next();
+		alunos.n1 = sc.nextDouble();
+		alunos.n2 = sc.nextDouble();
+		alunos.n3 = sc.nextDouble();
+		
+
+		System.out.println(alunos);
+
+		sc.close();
+	}
+
+}

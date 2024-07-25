@@ -1,0 +1,38 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidade.Produto;
+
+public class Estoque {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Locale.setDefault(Locale.US);
+	Scanner sc = new Scanner(System.in);
+	
+	//IMPORTAR CLASSE DO OBJETO ; OBJETO = PRODUTO, CRIA NOVA VARIAVEL E INICIA O OBJ
+	Produto produto = new Produto();
+	
+	System.out.println("Data de entrada de produto");
+	
+	System.out.print("Name: ");
+	//ACESSAR ATRIBUTO E DEFINIR O TIPO DA ENTRADA DE DADOS QUE ELE IRÁ RECEBER
+	produto.nome = sc.nextLine();
+	
+	System.out.print("Preço: ");
+	produto.preco = sc.nextDouble();
+	
+	System.out.print("Quantidade em estoque: ");
+	produto.quantidade = sc.nextInt();
+	
+	produto.toString();
+	
+	System.out.println(produto.nome + "," + produto.preco + "," + produto.quantidade);
+	sc.close();
+
+	}
+
+}
